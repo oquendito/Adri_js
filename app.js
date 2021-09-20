@@ -1,7 +1,19 @@
-let cancion= prompt ("Cancion favorita");
-let artista = prompt ("Artista favorito");
+let alumno = prompt("Ingrese su nombre");
+let calificacion = prompt("Ingrese su calificacion");
 
-console.log(cancion);
-console.log(artista);
+if(calificacion >= 1 && calificacion <= 10){
 
-console.log(`${cancion} ${artista}`);
+    if(calificacion>=7 && calificacion <= 9){
+        alert("Aprobado");
+    }else if(calificacion==10){
+        alert("Óptimo");
+    }else{
+        alert("Reprobado");
+    }
+
+}else{
+    alert("Calificación no disponible, vuelve en 3 días hábiles");
+}
+
+console.log(`${alumno} ${calificacion}`);
+
