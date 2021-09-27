@@ -18,6 +18,35 @@ if(calificacion >= 1 && calificacion <= 10){
 console.log(`${alumno} ${calificacion}`);*/
 
 
+let  fecha = new Date(),
+
+    hora = fecha.getHours();
+
+
+let saludo = function (hr) {
+
+    if (hr <= 5) {
+
+    return 'Muy temprano Seba';
+
+    } else if(hr >= 6 && hr <= 11) {
+
+    return 'Buen día!';
+
+    } else if(hr >= 12 && hr <= 18) {
+
+    return 'Buenas tardes!';
+
+    } else {
+
+    return 'A mimir';
+
+    }
+
+};
+
+
+console.log( saludo(hora) ); //Imprime el saludo dependiendo la hora del día
 
 function generarTabla(numero){
 
@@ -34,3 +63,7 @@ function generarTabla(numero){
     }
 }
 
+function saludar(){console.log (`Hola Seba! Esto es una calculadora de tablas de multiplicar :)`);
+}
+
+saludar ();
