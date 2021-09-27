@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa del Código</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Examen</h1>
-    <p>Consulta tu calificacion</p>
-    <script src="app.js"></script>
+    <form>
+        <p>Tabla de: <input typwe="text" id="numero" /> <button type="button" onclick="generarTabla(numero.value)">Consultar</button> </p>
+    </form>
+
+    <table border="1" id="tabla">
+
+    </table>
+
+    <script src="./app.js"></script>
 </body>
 </html>
