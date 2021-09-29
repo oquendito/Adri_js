@@ -15,7 +15,7 @@ if(calificacion >= 1 && calificacion <= 10){
     alert("Calificación no disponible, vuelve en 3 días hábiles");
 }
 
-console.log(`${alumno} ${calificacion}`);*/
+console.log(`${alumno} ${calificacion}`);
 
 
 let  fecha = new Date(),
@@ -66,4 +66,23 @@ function generarTabla(numero){
 function saludar(){console.log (`Hola Seba! Esto es una calculadora de tablas de multiplicar :)`);
 }
 
-saludar ();
+saludar ();*/
+
+let afirmacion = prompt("Desea ingresar al sitio?");
+
+if(afirmacion ="Si"){
+        alert("Inicie sesión");
+}
+
+function login(){
+  let form = document.form;
+  let user = form.usuario.value;
+  let pass = form.contraseña.value;
+
+  if(user == "Seba" && pass == "coderhouse"){
+    alert("bienvenido Seba!");
+  }else{
+    alert("datos incorrectos");
+  }
+} 
+
