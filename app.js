@@ -90,7 +90,7 @@ let user = {
   name: "Seba",
   location: "Argentina",
   login: function() {
-    console.log("the user logged in! :)");
+    console.log("iniciaste sesion! :)");
   }
 };
 
