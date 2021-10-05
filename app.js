@@ -46,7 +46,7 @@ let saludo = function (hr) {
 };
 
 
-console.log( saludo(hora) ); //Imprime el saludo dependiendo la hora del día
+console.log( saludo(hora) );
 
 function generarTabla(numero){
 
@@ -63,36 +63,25 @@ function generarTabla(numero){
     }
 }
 
-function saludar(){console.log (`Hola Seba! Esto es una calculadora de tablas de multiplicar :)`);
+*/
+
+const productos = [
+    {nombre: 'Gatabis', precio: 2 },
+    {nombre: 'Libro para colorear', precio: 4},
+    {nombre: 'Campera', precio: 8},
+    {nombre: 'Collar', precio: 2},
+    {nombre: 'Rascador reciclado', precio: 6},
+    {nombre: 'Arena para gatos', precio: 8}
+];
+
+const menores = productos.filter(p => p.precio <=4 );
+
+console.log(menores);
+
+const mayores = productos.filter(p => p.precio >=5 );
+console.log(mayores);
+
+function saludar(){console.log (`Hola Seba! Hice un tipo de filtrado para el catalogo :)`);
 }
 
-saludar ();*/
-
-let afirmacion = prompt("Desea ingresar al sitio?");
-
-if(afirmacion ="Si"){
-        alert("Inicie sesión");
-}
-
-function login(){
-  let form = document.form;
-  let user = form.usuario.value;
-  let pass = form.contraseña.value;
-
-  if(user == "Seba" && pass == "coderhouse"){
-    alert("bienvenido Seba!");
-  }else{
-    alert("datos incorrectos");
-  }
-} 
-
-let user = {
-  name: "Seba",
-  location: "Argentina",
-  login: function() {
-    console.log("iniciaste sesion! :)");
-  }
-};
-
-console.log(user);
-
+saludar ();
